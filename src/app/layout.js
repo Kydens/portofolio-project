@@ -6,8 +6,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Portofolio Eddy Nathansyah",
-  author: "Eddy Nathansyah",
-  description: "Created with Next.js",
+  keywords: ['Next.js', 'JavaScript', 'Portofolio'],
+  authors: [
+    { name: 'Eddy Nathansyah', url: 'https://github.com/Kydens' }
+  ]
 };
 
 export default function RootLayout({ children }) {
