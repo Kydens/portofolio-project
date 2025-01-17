@@ -13,7 +13,7 @@ const ComponentSkill = (props) => {
     return (
         <div className="flex justify-around items-center w-full">
             <div className={`Image-${props.skill}`}>
-                <Image src={`/Images/${props.skill}.svg`} width={80} height={80} />
+                <Image src={`/images/${props.skill}.svg`} width={80} height={80} />
             </div>
             <div className="flex flex-col w-full ml-4">
                 <h2 className="font-semibold text-md text-[#4E3A69]">{props.skill}</h2>
