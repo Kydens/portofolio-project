@@ -6,7 +6,7 @@ const DashboardFooter = () => {
         <div className="h-full bg-[#F7E6F0]">
             <div className="grid grid-cols-1 md:grid-cols-2 p-4 sm:p-8 lg:p-12 gap-y-14">
                 <div className="flex flex-col gap-4">
-                    <h2 className="text-lg font-bold">Contact</h2>
+                    <h2 className="text-lg md:text-2xl lg:text-3xl font-bold">Contact</h2>
                     <table>
                         <thead></thead>
                         <tbody>
@@ -29,7 +29,7 @@ const DashboardFooter = () => {
                     </table>
                 </div>
                 <div className="flex flex-col gap-4">
-                    <h2 className="w-full text-lg font-bold md:text-end">Want to Ask?</h2>
+                    <h2 className="w-full text-lg md:text-2xl lg:text-3xl font-bold md:text-end">Want to Ask?</h2>
                     <div className="flex flex-col">
                         <p className="text-sm sm:text-[16px] md:text-end">Feel Free to Ask and Contact Me!</p>
                         <p className="text-sm sm:text-[16px] md:text-end mb-3">Contact Me on Email</p>

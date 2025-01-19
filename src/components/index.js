@@ -8,7 +8,8 @@ import {
 } from './pages';
 import {
     SkillsCard,
-    ProjectsCard
+    ProjectsCard,
+    EduCard,
 } from './cards'
 
 export {
@@ -20,4 +21,5 @@ export {
     DashboardFooter,
     SkillsCard,
     ProjectsCard,
+    EduCard,
 }

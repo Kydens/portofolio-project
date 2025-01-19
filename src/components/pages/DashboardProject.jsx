@@ -3,7 +3,7 @@ import { ProjectsCard } from '@/components';
 
 const DashboardProject = () => {
     return (
-        <section className="h-full w-full flex flex-col gap-y-28">
+        <section className="h-full w-full flex flex-col gap-y-12">
             <h1 className="font-bold text-4xl text-center text-[#4E3A69]">My Project</h1>
 
             {/* Project Card */}
