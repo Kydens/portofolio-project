@@ -8,14 +8,24 @@ import {
 
 export default function Home() {
   return (
-    <>
+    <div>
       <main className="flex flex-col gap-24 px-8 pb-16">
-        <DashboardHome />
-        <DashboardAboutMe />
-        <DashboardProject />
+        <div id="home">
+          <DashboardHome />
+        </div>
+
+        <div id="about" style={{ paddingTop: '100px', marginTop: '-100px' }}>
+          <DashboardAboutMe />
+        </div>
+
+        <div id="projects" style={{ paddingTop: '100px', marginTop: '-100px' }}>
+          <DashboardProject />
+        </div>
       </main>
     
-      <DashboardFooter />
-    </>
+      <div id="contact">
+        <DashboardFooter />
+      </div>
+    </div>
   );
 }

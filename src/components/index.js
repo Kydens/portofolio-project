@@ -1,5 +1,6 @@
 import ComponentNavbar from './ComponentNavbar';
 import ComponentSkill from './ComponentSkill';
+import ComponentAlert from './ComponentAlert';
 import { 
     DashboardHome, 
     DashboardAboutMe,
@@ -15,6 +16,7 @@ import {
 export {
     ComponentNavbar,
     ComponentSkill,
+    ComponentAlert,
     DashboardHome,
     DashboardAboutMe,
     DashboardProject,

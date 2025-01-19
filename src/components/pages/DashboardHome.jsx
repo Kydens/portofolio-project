@@ -22,7 +22,7 @@ const DashboardHome = () => {
                 </div>
             </div>
             <div className="home-image w-fit flex justify-center absolute right-0 top-28 -z-10 lg:block lg:relative lg:top-auto lg:right-auto lg:z-0">
-                <Image src='/images/dummy.jpg' width={300} height={300} />
+                <Image src='/images/imageHome1.jpg' className="rounded-xl shadow-xl lg:block hidden" width={300} height={300} style={{ maxWidth: '300px', maxHeight: '300px', objectFit: 'cover', objectPosition: '50% 75%' }}/>
             </div>
         </section>
     );

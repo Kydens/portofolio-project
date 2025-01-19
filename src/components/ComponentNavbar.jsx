@@ -1,23 +1,37 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const ComponentNavbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-
+    const [activeHash, setActiveHash] = useState('');
+    const pathname = usePathname();
+    
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+    const handleHash = (hash) => {
+        setActiveHash(hash);
+        console.log(hash)
+    }
+
+    useEffect(() => {
+        const hashLink = window.location.hash;
+        setActiveHash(hashLink);
+    }, [pathname]);
 
     return (
         <nav className="sticky top-0 w-full h-fit border-gray-200 z-50" style={{ backgroundColor: '#4E3A69' }}>
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portofolio</span>
+                    <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Portofolio</span>
                 </a>
                 <button
                     onClick={toggleMenu}
                     type="button"
-                    className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
                     aria-controls="navbar-default"
                     aria-expanded={isOpen ? "true" : "false"}
                 >
@@ -32,16 +46,16 @@ const ComponentNavbar = () => {
                         style={{ backgroundColor: '#4E3A69' }}
                     >
                         <li>
-                            <a href="#" className="block py-2 px-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FDFDB4] md:px-2 md:py-1 dark:text-white md:dark:hover:text-[#FDFDB4] dark:hover:bg-white/20 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+                            <Link href="#home" onClick={() => handleHash('#home')} className={`block py-2 px-2 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FDFDB4] md:px-2 md:py-1 ${activeHash === "" || activeHash == '#home' ? 'text-[#FDFDB4]' : 'text-white'} hover:bg-white/20 hover:text-white`}>Home</Link>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FDFDB4] md:px-2 md:py-1 dark:text-white md:dark:hover:text-[#FDFDB4] dark:hover:bg-white/20 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                            <Link href="#about" onClick={() => handleHash('#about')} className={`block py-2 px-2 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FDFDB4] md:px-2 md:py-1 ${activeHash == '#about' ? 'text-[#FDFDB4]' : 'text-white'} hover:bg-white/20 hover:text-white`}>About</Link>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FDFDB4] md:px-2 md:py-1 dark:text-white md:dark:hover:text-[#FDFDB4] dark:hover:bg-white/20 dark:hover:text-white md:dark:hover:bg-transparent">Project</a>
+                            <Link href="#projects" onClick={() => handleHash('#projects')} className={`block py-2 px-2 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FDFDB4] md:px-2 md:py-1 ${activeHash == '#projects' ? 'text-[#FDFDB4]' : 'text-white'} hover:bg-white/20 hover:text-white`}>Project</Link>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 px-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FDFDB4] md:px-2 md:py-1 dark:text-white md:dark:hover:text-[#FDFDB4] dark:hover:bg-white/20 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                            <Link href="#contact" onClick={() => handleHash('#contact')} className={`block py-2 px-2 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#FDFDB4] md:px-2 md:py-1 ${activeHash == '#contact' ? 'text-[#FDFDB4]' : 'text-white'} hover:bg-white/20 hover:text-white`}>Contact</Link>
                         </li>
                     </ul>
                 </div>
