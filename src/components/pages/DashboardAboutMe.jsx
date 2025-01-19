@@ -49,8 +49,8 @@ const DashboardAboutMe = () => {
                 <div className="flex flex-col gap-8">
                     <div className="about-me-text max-w-screen-sm flex flex-col justify-center">
                         <h1 className="text-3xl font-bold mb-3 text-[#9E77BF]">Eddy Nathansyah</h1>
-                        <p>Saya adalah seorang lulusan dari jurusan Teknik Informatika Universitas Tarumanagara.
-                        Saya adalah seorang yang disiplin dan bertanggung jawab dengan semangat yang tinggi. Saya memiliki keahlian dalam  <strong className="text-[#FF2D20]">Laravel</strong>, <strong className="text-[#000000]">Next.js</strong>, dan <strong className="text-[#306998]">Python</strong> dan <strong className="text-[#0ACF83]">UI/UX Design</strong>. Saya tertarik dengan hal-hal baru dan teknologi baru, seperti pembelajaran AI.</p>
+                        <p className="text-justify">Saya adalah seorang lulusan dari jurusan Teknik Informatika Universitas Tarumanagara.
+                        Saya adalah seorang yang disiplin dan bertanggung jawab dengan semangat yang tinggi. Saya memiliki keahlian dalam  <strong>Laravel</strong>, <strong>Next.js</strong>, dan <strong>Python</strong> dan <strong>UI/UX Design</strong>. Saya tertarik dengan hal-hal baru dan teknologi baru, seperti pembelajaran AI.</p>
                     </div>
                     <div>
                         <button onClick={() => handleDownload()} className="flex items-center gap-2 border-2 rounded-md px-8 py-3 bg-[#9E77BF] text-white font-bold hover:bg-[#9E77BF]/90 transition-all duration-200">

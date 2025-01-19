@@ -5,10 +5,10 @@ const ComponentSkill = (props) => {
     const level = props.level || "0%";
     const barColor =
         parseInt(level) >= 80
-        ? "#4CAF50"
+        ? "#4E3A69"
         : parseInt(level) >= 50
-        ? "#FFC107"
-        : "#F44336";
+        ? "#9E77BF"
+        : "#F7E6F0";
 
     return (
         <div className="flex justify-around items-center w-full">

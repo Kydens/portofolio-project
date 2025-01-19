@@ -9,9 +9,9 @@ const SkillsCard = () => {
 
     const skills = {
         items: [
-            { name: 'HTML', level: '90%' },
-            { name: 'CSS', level: '80%' },
-            { name: 'TailwindCSS', level: '80%' },
+            { name: 'HTML', level: '100%' },
+            { name: 'CSS', level: '85%' },
+            { name: 'TailwindCSS', level: '85%' },
             { name: 'BootstrapCSS', level: '80%' },
             { name: 'Laravel', level: '80%' },
             { name: 'Javascript', level: '70%' },
@@ -26,7 +26,7 @@ const SkillsCard = () => {
     const buttonDisplayItems = Math.ceil(skills.items.length/itemsPerIteration)
 
     return (
-        <div className="max-w-1/3 h-full skill-card bg-[#F7E6F0] px-4 py-4 rounded-md shadow-md shadow-[#9E77BF]/20">
+        <div className="max-w-1/3 h-full skill-card bg-[#F7E6F0] py-4 rounded-md shadow-md shadow-[#9E77BF]/20">
             <h2 className="font-semibold text-xl text-center mb-2">Keahlian Utama</h2>
             
             <div className="flex flex-col justify-between gap-4">
