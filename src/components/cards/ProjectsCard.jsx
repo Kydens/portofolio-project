@@ -5,23 +5,28 @@ import { ComponentAlert, ComponentModal } from "..";
 
 const ProjectsCard = (props) => {
 
-    const [showAlert, setShowAlert] = useState(false);
+    const [showModal, setShowModal] = useState(false);
 
-    const handleClick = (href) => {
-        if (href === '') {
-            setShowAlert(true);
+    const handleShowModal = () => {
+        setShowModal(true);
+        document.body.classList.add('no-scroll');
+    };
 
-            
-        } else {
-            window.open(href, '_blank');
-        }
-    }
+    const handleCloseModal = () => {
+        setShowModal(false);
+        document.body.classList.remove('no-scroll');
+    };
 
     return (
         <>
-            {/* {showAlert && <ComponentAlert />} */}
-            {showAlert && <ComponentModal />}
-            <div onClick={() => handleClick(props.href)} className="card h-full w-full px-4 py-4 rounded-md shadow-md border-gray-50 border-2 shadow-[#9E77BF]/20 bg-white border-[#4E3A69]/30 hover:bg-[#F7E6F0] transition-all duration-200 cursor-pointer">
+            {showModal && 
+                <ComponentModal onClose={handleCloseModal} 
+                    image={props.image}
+                    title={props.title} 
+                    desc={props.desc}
+                    href={props.href}/>
+            }
+            <div onClick={handleShowModal} className="card h-full w-full px-4 py-4 rounded-md shadow-md border-gray-50 border-2 shadow-[#9E77BF]/20 bg-white border-[#4E3A69]/30 hover:bg-[#F7E6F0] transition-all duration-200 cursor-pointer">
                 <div className="card-body">
                     <div className="card-image mb-2" style={{ position: 'relative', width: '100%', maxWidth: '1200px'}}>
                         <Image src={`/images/projects/${props.image}.png`} width={0} height={0} sizes="100vw" className="rounded-md border-[#4E3A69]" style={{ width: '100%', height: 'auto', objectFit: 'cover'}}/>
