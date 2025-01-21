@@ -11,11 +11,11 @@ const DashboardHome = () => {
             <p className="mb-4 text-justify">Hai, saya <strong>Eddy Nathansyah</strong>. Seorang lulusan Teknik Informatika Universitas Tarumanagara dengan pengalaman sebagai Frontend Web Developer dan Pembelajaran Artificial Intelligence (AI). Saya ahli dalam membangun aplikasi berbasis <strong>Laravel</strong>, <strong>Next.js</strong>, dan <strong>Python</strong>, dengan kemampuan dasar dalam design menggunakan <strong>Figma</strong>. Saya selalu tertarik pada hal-hal baru dan teknologi terkini, seperti pengembangan AI.</p>
 
                 <div className="flex gap-2">
-                    <button className="flex items-center gap-2 border-2 rounded-full px-6 py-2 bg-[#9E77BF] text-white font-bold hover:bg-[#9E77BF]/90 transition-all duration-200">
+                    <button className="flex items-center gap-2 border-2 rounded-full px-6 py-2 bg-[#4E3A69] text-white font-bold hover:bg-[#9E77BF]/90 transition-all duration-300">
                         <FaGithub />
                         <a href="https://github.com/Kydens" target="_blank">Github</a>
                     </button>
-                    <button className="flex items-center gap-2 border-2 rounded-full px-6 py-2 bg-[#9E77BF] text-white font-bold hover:bg-[#9E77BF]/90 transition-all duration-200">
+                    <button className="flex items-center gap-2 border-2 rounded-full px-6 py-2 bg-[#4E3A69] text-white font-bold hover:bg-[#9E77BF]/90 transition-all duration-300">
                         <FaInstagram />
                         <a href="https://instagram.com/ednath.s" target="_blank">Instagram</a>
                     </button>
