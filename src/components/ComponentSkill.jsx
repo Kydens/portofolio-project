@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const ComponentSkill = (props) => {
     const level = props.level || "0%";
@@ -17,9 +18,11 @@ const ComponentSkill = (props) => {
             </div>
             <div className="flex flex-col w-full ml-4">
                 <h2 className="font-semibold text-md text-[#4E3A69]">{props.skill}</h2>
-                <div className={`BarSkill-${props.skill} flex-grow relative`}>
+                <div className={`BarSkill-${props.skill} relative`}>
                     <div className="w-full h-4 bg-white rounded border-2"></div>
-                    <div className={`absolute top-0 h-4 rounded border-2`} style={{ width: `${level}`, backgroundColor: `${barColor}` }}></div>
+                    <motion.div initial={{ width: '0%' }} animate={{ width: `${level}`, backgroundColor: barColor}}
+                        exit={{ width: '0%' }} transition={{ duration: 0.7 }} 
+                        className={`absolute top-0 h-4 rounded border-2`} style={{ width: `${level}`, backgroundColor: `${barColor}` }}></motion.div>
                 </div>
             </div>
         </div>
