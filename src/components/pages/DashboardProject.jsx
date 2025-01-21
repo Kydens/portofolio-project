@@ -13,29 +13,37 @@ const DashboardProject = () => {
                     title='Prediksi Pergerakan Sinyal Saham IDX LQ45 Sektor Perbankan' 
                     desc='Aplikasi prediksi pergerakan sinyal secara Real-Time dengan menggunakan Machine Learning metode Random Forest, XGBoost, dan Voting Regression.'
                     tags={['Laravel', 'BootstrapCSS', 'Python', 'Machine Learning']}
-                    href={'https://github.com/Kydens/prediksi-IDX-LQ45-Bank'}
-                    />
+                    href={[
+                        {label:'Github', url:'https://github.com/Kydens/prediksi-IDX-LQ45-Bank'}, 
+                        {label:'Live Website', url:''}
+                    ]}/>
                 <ProjectsCard 
                     image='CMD' 
                     title='Aplikasi Pengingat Adzan' 
                     desc='Aplikasi sebagai pengingat adzan yang dijalankan melalui CMD dan akan bersuara saat sudah waktunya adzan.' 
                     tags={['Python']} 
-                    href={'https://github.com/Kydens/Prayer-Reminder'}
-                    />
+                    href={[
+                        {label:'Github', url:'https://github.com/Kydens/Prayer-Reminder'}, 
+                        {label:'Live Website', url:''}
+                    ]}/>
                 <ProjectsCard 
                     image='Dashboard-Sangati' 
                     title='Dashboard IT Sangati' 
                     desc='Aplikasi dashboard untuk internal IT PT. Sangati Soerya Sejahtera. Aplikasi ini menunjang hal-hal yang diperlukan oleh tim internal IT PT. Sangati Soerya Sejahtera.'
                     tags={['Laravel', 'BootstrapCSS', 'MySQL']}
-                    href={''}
-                    />
+                    href={[
+                        {label:'Github', url:''}, 
+                        {label:'Live Website', url:''}
+                    ]}/>
                 <ProjectsCard 
                     image='LMSI' 
                     title='Website L&M Systems Indonesia' 
                     desc='Aplikasi portofolio website L&M Systems Indonesia untuk mempromosikan perusahaan dan jasa yang disediakan.' 
                     tags={['Next.js']}
-                    href={''}
-                    />
+                    href={[
+                        {label:'Github', url:''}, 
+                        {label:'Live Website', url:'https://lmsi.co/'}
+                    ]}/>
             </div>
         </section>
     );
