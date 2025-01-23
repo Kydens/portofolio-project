@@ -48,7 +48,7 @@ const DashboardAboutMe = () => {
                 {/* Description Profile */}
                 <div className="flex flex-col gap-8">
                     <div className="about-me-text max-w-screen-sm flex flex-col justify-center">
-                        <h1 className="text-3xl font-bold mb-3 text-[#9E77BF]">Eddy Nathansyah</h1>
+                        <h1 className="text-3xl font-bold mb-3">Eddy Nathansyah</h1>
                         <p className="text-justify">Saya adalah seorang lulusan dari jurusan Teknik Informatika Universitas Tarumanagara.
                         Saya adalah seorang yang disiplin dan bertanggung jawab dengan semangat yang tinggi. Saya memiliki keahlian dalam  <strong>Laravel</strong>, <strong>Next.js</strong>, dan <strong>Python</strong> dan <strong>UI/UX Design</strong>. Saya tertarik dengan hal-hal baru dan teknologi baru, seperti pembelajaran AI.</p>
                     </div>
