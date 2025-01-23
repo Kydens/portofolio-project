@@ -19,10 +19,14 @@
 body {
   color: #4E3A69;
   position: relative;
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
 }
 
-body::before {
+/* body::before {
   content: '';
   position: absolute;
   top: 0;
@@ -33,9 +37,9 @@ body::before {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.8;
+  opacity: 1;
   z-index: -1;
-}
+} */
 
 .no-scroll {
   overflow: hidden;
