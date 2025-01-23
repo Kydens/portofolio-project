@@ -21,6 +21,8 @@ const DashboardHome = () => {
                 clearInterval(interval);
             }
         }, 50);
+
+        return () => clearInterval(interval);
     }, [counter, text]);
 
     return (
