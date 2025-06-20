@@ -62,12 +62,15 @@ const DashboardAboutMe = () => {
           <div className="about-me-text max-w-screen-sm flex flex-col justify-center">
             <h1 className="text-3xl font-bold mb-3">Eddy Nathansyah</h1>
             <p className="text-justify">
-              aplikasi web menggunakan Laravel, Next.js, Node.js, dan Flask.
-              Memiliki pemahaman tentangstruktur data, OOP, RESTful API, dan
-              basis data relasional seperti MySQL dan PostgreSQL.
-              Mudahberadaptasi dan cepat memahami tugas dengan pengalaman
-              bekerja dalam tim. Bersemangatuntuk berkontribusi sebagai
-              pengembang yang bertanggung jawab dan pemberi solusi.
+              Fresh graduate di bidang teknik informatika dengan pengalaman
+              langsung dalam mengembangkan aplikasi web menggunakan{" "}
+              <strong>Laravel</strong>, <strong>Next.js</strong>,{" "}
+              <strong>Node.js</strong>, dan <strong>Flask</strong>. Memiliki
+              pemahaman tentang struktur data, OOP, RESTful API, dan basis data
+              relasional seperti MySQL dan PostgreSQL. Mudah beradaptasi dan
+              cepat memahami tugas dengan pengalaman bekerja dalam tim.
+              Bersemangat untuk berkontribusi sebagai pengembang yang bertanggung
+              jawab dan pemberi solusi.
             </p>
           </div>
           <div>
